@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synthesizer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Arial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="skins.css"> <!-- Link your existing CSS file -->
+
+</head>
+<body class="synthwave">
+    <div class="container-box">
+        <h1>Synthesizer</h1>
+        <button id="playButton" class="synthwave">Play Sound</button>
+        <div class="controls">
+            <!-- Oscillator 1 Box -->
+            <div class="oscillator-box">
+                <h3>Oscillator 1</h3>
+                <div class="control-group">
+                    <label for="oscillator1Waveform">Waveform</label>
+                    <select id="oscillator1Waveform">
+                        <option value="sine">Sine</option>
+                        <option value="square">Square</option>
+                        <option value="sawtooth">Sawtooth</option>
+                        <option value="triangle">Triangle</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label for="oscillator1Frequency">Frequency</label>
+                    <input id="oscillator1Frequency" class="slider" type="range" min="20" max="2000" step="1" value="440">
+                </div>
+                <div class="control-group">
+                    <label for="oscillator1Volume">Volume</label>
+                    <input id="oscillator1Volume" class="slider" type="range" min="0" max="1" step="0.01" value="0.5">
+                </div>
+            </div>
+
+            <!-- Oscillator 2 Box -->
+            <div class="oscillator-box">
+                <h3>Oscillator 2</h3>
+                <div class="control-group">
+                    <label for="oscillator2Waveform">Waveform</label>
+                    <select id="oscillator2Waveform">
+                        <option value="sine">Sine</option>
+                        <option value="square">Square</option>
+                        <option value="sawtooth">Sawtooth</option>
+                        <option value="triangle">Triangle</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label for="oscillator2Frequency">Frequency</label>
+                    <input id="oscillator2Frequency" class="slider" type="range" min="20" max="2000" step="1" value="440">
+                </div>
+                <div class="control-group">
+                    <label for="oscillator2Volume">Volume</label>
+                    <input id="oscillator2Volume" class="slider" type="range" min="0" max="1" step="0.01" value="0.5">
+                </div>
+            </div>
+
+            <!-- Oscillator 3 Box -->
+            <div class="oscillator-box">
+                <h3>Oscillator 3</h3>
+                <div class="control-group">
+                    <label for="oscillator3Waveform">Waveform</label>
+                    <select id="oscillator3Waveform">
+                        <option value="sine">Sine</option>
+                        <option value="square">Square</option>
+                        <option value="sawtooth">Sawtooth</option>
+                        <option value="triangle">Triangle</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label for="oscillator3Frequency">Frequency</label>
+                    <input id="oscillator3Frequency" class="slider" type="range" min="20" max="2000" step="1" value="440">
+                </div>
+                <div class="control-group">
+                    <label for="oscillator3Volume">Volume</label>
+                    <input id="oscillator3Volume" class="slider" type="range" min="0" max="1" step="0.01" value="0.5">
+                </div>
+            </div>
+        </div>
+        <button id="reverbButton" class="synthwave">Activate Reverb</button> 
+        <!-- Canvas for waveform visualization -->
+        <div class="canvas-container">
+            <canvas id="waveformCanvas"></canvas>
+        </div>
+    </div>
+
+    <!-- Move the script tag here -->
+
+</body>
+
+<script src="synth_ui.js"></script>
+</html>
